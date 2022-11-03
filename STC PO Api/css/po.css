@@ -1,0 +1,239 @@
+﻿.header {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+
+.header td {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin-left 0px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.header th {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0px 0px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.header .tg-7vsa {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: left;
+    vertical-align: top;
+}
+
+.header .tg-waqj {
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #9b9b9b;
+    border-color: inherit;
+    text-align: right;
+    vertical-align: top
+}
+
+.header .tg-gx32 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: left;
+    vertical-align: top
+}
+
+.PODetails {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.PODetails td {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.PODetails th {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.PODetails .tg-5fi5 {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    ;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: top
+}
+
+.PODetails .tg-ffik {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: top;
+}
+
+.PODetails .tg-68n1 {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.PODetails .tg-3zn0 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: middle
+}
+
+.POItems {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.POItems td {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.POItems th {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.POItems .tg-z4i2 {
+    border: 1px solid silver;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    vertical-align: top;
+    white-space: pre-wrap;
+}
+
+.POItems .tg-tn1f {
+    font-weight: bold;
+    background-color: #efefef;
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: middle
+}
+
+.POItems .tg-0w69 {
+    border: none;
+    vertical-align: middle;
+    word-break: keep-all;
+}
+
+.note {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.note td {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.note th {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.note .tg-z4i2 {
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: top;
+    white-space: pre-wrap;
+}
+
+.signature {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.signature td {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.signature th {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+}
+
+.signature .tg-z4i2 {
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: middle
+}
+
+.signature .tg-zv4m {
+    border-color: #ffffff;
+    text-align: left;
+    vertical-align: top
+}
+
+p {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
