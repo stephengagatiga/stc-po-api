@@ -1,1 +1,2 @@
-﻿phen@shellsoft.com.ph
+﻿po-viewer@shellsoft.com.ph
+po-approver@shellsoft.com.ph

@@ -17,7 +17,8 @@ namespace STC_PO_Api.Services
         void UpdatePOStatus(POPending pOPending, POStatus pOStatus);
         POPending UpdatePO(EditPOPending newPOPending, POPending oldPOPending);
         POPending UpdateDraftPO(EditPOPendingDraft newPOPending, POPending oldPOPending);
-        ICollection<POPending> GetPOs();
+        ICollection<POPending> GetPOs(int skip, int take);
+        ICollection<POPending> SearchPOs(string keyword, string searchType);
         ICollection<POPending> GetPendingPOs();
         ICollection<POGuidStatus> UpdatePOsStatus(ICollection<POGuidStatus> pOGuidStatuses, ICollection<POPending> pOPendings);
         UpdatePOStatusResult UpdatePOStatus(UpdatePOStatus updatePOStatus, POPending pO);

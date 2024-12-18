@@ -313,12 +313,66 @@ namespace STC_PO_Api.Services
             return po;
         }
 
-        public ICollection<POPending> GetPOs()
+        public ICollection<POPending> GetPOs(int skip, int take)
         {
             var result = _context.POPendings
                                     .OrderByDescending(p => p.Id)
                                     .Include(i => i.POPendingItems)
+                                    .Skip(skip).Take(take)
                                     .ToList();
+            return result;
+        }
+
+        public ICollection<POPending> SearchPOs(string keyword, string searchType)
+        {
+            var result = new List<POPending>();
+
+            switch(searchType)
+            {
+                case "PO":
+                    var on = int.Parse(keyword);
+                    result = _context.POPendings
+                        .Where(p => p.OrderNumber == on)
+                        .Include(i => i.POPendingItems)
+                        .OrderByDescending(p => p.Id)
+                        .Take(100)
+                        .ToList();
+                break;
+                case "Supplier":
+                    result = _context.POPendings
+                        .Where(p => p.SupplierName.Contains(keyword))
+                        .Include(i => i.POPendingItems)
+                        .OrderByDescending(p => p.Id)
+                        .Take(100)
+                        .ToList();
+                break;
+                case "Customer":
+                    result = _context.POPendings
+                        .Where(p => p.CustomerName.Contains(keyword))
+                        .Include(i => i.POPendingItems)
+                        .OrderByDescending(p => p.Id)
+                        .Take(100)
+                        .ToList();
+                break;
+                case "Reference":
+                    result = _context.POPendings
+                        .Where(p => p.ReferenceNumber.Contains(keyword))
+                        .Include(i => i.POPendingItems)
+                        .OrderByDescending(p => p.Id)
+                        .Take(100)
+                        .ToList();
+                break;
+                default:
+                    var on2 = int.Parse(keyword);
+                    result = _context.POPendings
+                        .Where(p => p.OrderNumber == on2)
+                        .Include(i => i.POPendingItems)
+                        .OrderByDescending(p => p.Id)
+                        .Take(100)
+                        .ToList();
+                break;
+            }
+
             return result;
         }
 

@@ -676,7 +676,7 @@ namespace STC_PO_Api.Services
                     Name = item.Name,
                     Price = item.Price,
                     Quantity = item.Quantity,
-                    Total = item.Price * item.Quantity,
+                    Total = item.Total,
                     Order = item.Order
                 });
             }
@@ -861,7 +861,7 @@ namespace STC_PO_Api.Services
                                     <td class='tg-z4i2' style='padding-left: 20px; text-align: right;padding-top: 10px; padding-bottom: 10px;'>{2}</td>
                                     <td class='tg-z4i2' style='padding-left: 20px; text-align: right; font-weight: bold;padding-top: 10px; padding-bottom: 10px;'>{3}</td>
                                 </tr>
-                                ", String.Format(EN_US, "{0:n0}", currentItem.Quantity) , currentItem.Name, String.Format(EN_US, "{0:n}", currentItem.Price), String.Format(EN_US, "{0:n}", amount));
+                                ", String.Format(EN_US, "{0:n0}", currentItem.Quantity) , currentItem.Name, String.Format(EN_US, "{0:n}", currentItem.Price), String.Format(EN_US, "{0:n}", currentItem.Total));
 
                     //get the last index so that it will continue from where it left during break in the loop of items
                 }

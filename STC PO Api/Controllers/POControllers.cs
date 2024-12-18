@@ -51,9 +51,15 @@ namespace STC_PO_Api.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetPOs()
+        public IActionResult GetPOs(int skip = 0, int take = 50)
         {
-            var pos = _poData.GetPOs();
+            var pos = _poData.GetPOs(skip, take);
+            return Ok(pos);
+        }
+        [HttpGet("search")]
+        public IActionResult SearchPO(string keyword = "", string searchType = "PO #")
+        {
+            var pos = _poData.SearchPOs(keyword, searchType);
             return Ok(pos);
         }
 
